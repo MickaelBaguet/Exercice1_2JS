@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercice 1</title>
+  </head>
+  <body>
+    <img src="images/image1.jpg" id="image1" />
+
+    <script type="text/javascript">
+      var img = document.getElementById('image1');
+      // Si on passe la souris sur l'image1 ça lance une fonction
+      img.addEventListener('mouseenter', function()
+        {
+          // Si c'est l'image de base :
+          if (img.src === 'file:///home/mickael/Exercice/ExerciceJS/Partie_2/Exercice_1/images/image1.jpg')
+          {
+            // On la change en image altérnative
+            img.src = 'file:///home/mickael/Exercice/ExerciceJS/Partie_2/Exercice_1/images/image1_2.jpg';
+          }
+          // Sinon c'est que c'est l'image alt
+          else
+          {
+            // Et on la change en l'image de base
+            img.src = 'file:///home/mickael/Exercice/ExerciceJS/Partie_2/Exercice_1/images/image1.jpg';
+          }
+        })
+    </script>
+
+  </body>
+</html>
